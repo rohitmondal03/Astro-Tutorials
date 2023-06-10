@@ -1,0 +1,81 @@
+---
+import paint from "/paint.png";
+import portrait from "/main-portrait.jpg";
+import fancyLine from "/fancy-line.svg";
+---
+
+<div class="relative mx-12 flex flex-col items-center justify-center">
+    <h1 class="text-2xl">
+        Enter Hua's Doodle-Dazzled <span class="font-bold">
+            Digital Universe !</span
+        >
+    </h1>
+    <div class="relative">
+        <svg
+            class="absolute h-full w-full overflow-visible"
+            width="540"
+            height="255"
+            viewBox="0 0 540 255"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                d="M538 253.5V167H2L2 2"
+                stroke="url(#paint0_linear_6_33)"
+                stroke-width="3"
+                stroke-linecap="round"></path>
+            <defs>
+                <linearGradient
+                    id="paint0_linear_6_33"
+                    x1="2.00009"
+                    y1="50.9998"
+                    x2="589"
+                    y2="275.5"
+                    gradientUnits="userSpaceOnUse"
+                >
+                    <stop stop-color="#DC3A2B"></stop>
+                    <stop offset="1" stop-color="#E18510"></stop>
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <p id="anim-p" class="p-6 text-lg">
+            You've stumbled upon <span class="font-bold text-primary">Hua's</span
+            > little corner of the internet, where creativity runs rampant and normal
+            is just a setting on a washing machine.<br />
+            <br />
+            Stick around, explore the digital masterpieces, and enjoy the occasional
+            artistic shenanigans. It's more fun than you'd think!
+            <br />
+            <br />
+            Delight in the unpredictable artistic shenanigans that burst forth from
+            the canvas of this digital universe. Here, every visit is an adventure,
+            every glance an exploration. Dive in, the pixels are warm!
+        </p>
+    </div>
+
+    <div class="flex justify-center pt-12 text-center mb-12 xl: gap-16">
+        <div class="w-32">
+            <h2>Art Posts</h2>
+            <p class="text-2xl font-bold">85</p>
+        </div>
+        <div class="w-32">
+            <h2>Youtube</h2>
+            <p class="text-2xl font-bold">1.2 m</p>
+        </div>
+        <div class="w-32">
+            <h2>Reviews</h2>
+            <p class="text-2xl font-bold">50</p>
+        </div>
+    </div>
+
+    <div class="relative">
+        <img class="h-full" src={portrait} alt="Hua's portrait" />
+
+        <div class="absolute bottom-0 right-0 translate-y-1/4">
+            <img src={paint} alt="paint" />
+        </div>
+    </div>
+</div>
+
+<div class="mt-12 h-4 w-full bg-black"></div>
