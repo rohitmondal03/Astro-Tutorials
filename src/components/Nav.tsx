@@ -64,10 +64,10 @@ const Nav = () => {
             </h1>
 
             {matches && (
-                <div>
-                    <a href="/">Home</a>
-                    <a href="/services">Services</a>
-                    <a href="/contact">Contact</a>
+                <div className='flex flex-row items-center justify-between'>
+                    <a className='mx-4' href="/">Home</a>
+                    <a className='mx-4' href="/services">Services</a>
+                    <a className='mx-4' href="/contact">Contact</a>
                 </div>
             )}
 
@@ -106,7 +106,7 @@ const Nav = () => {
 
             {toggled && !matches && (
                 <motion.div
-                    className='fixed flex bg-white bottom-0 left-0 w-full h-screen items-center justify-center'
+                    className='fixed flex bg-white top-0 bottom-0 left-0 w-full h-screen items-center justify-center z-40'
                     animate={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: 25 }}
                 >

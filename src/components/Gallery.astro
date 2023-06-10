@@ -1,0 +1,60 @@
+---
+import art1 from "/art1.jpg";
+import art2 from "/art2.jpg";
+import art3 from "/art3.jpg";
+import art4 from "/art4.jpg";
+---
+
+<div class="mx-12">
+    <h1 class="my-24 text-center text-4xl font-bold text-zinc-800">Latest Art Pieces</h1>
+
+    <div class="grid grid-cols-1 gap-24 xl:mx-48 xl:grid-cols-2">
+        <div class="relative group cursor-pointer">
+            <img
+                src={art1}
+                alt="painting"
+                class="relative w-full z-10 rounded-lg transition-all group-hover:-translate-x-3 group-hover:translate-y-4"
+            />
+            <div
+                class="absolute left-0 top-0 w-full h-full rounded-lg bg-black group-hover:translate-x-4"
+            >
+            </div>
+        </div>
+
+        <div class="relative group cursor-pointer">
+            <img
+                src={art2}
+                alt="painting"
+                class="relative w-full z-10 rounded-lg transition-all group-hover:-translate-x-3 group-hover:translate-y-4"
+            />
+            <div
+                class="absolute left-0 top-0 w-full h-full rounded-lg bg-black group-hover:translate-x-4"
+            >
+            </div>
+        </div>
+
+        <div class="relative group cursor-pointer">
+            <img
+                src={art3}
+                alt="painting"
+                class="relative w-full z-10 rounded-lg transition-all group-hover:-translate-x-3 group-hover:translate-y-4"
+            />
+            <div
+                class="absolute left-0 top-0 w-full h-full rounded-lg bg-black group-hover:translate-x-4"
+            >
+            </div>
+        </div>
+
+        <div class="relative group cursor-pointer">
+            <img
+                src={art4}
+                alt="painting"
+                class="relative w-full z-10 rounded-lg transition-all group-hover:-translate-x-3 group-hover:translate-y-4"
+            />
+            <div
+                class="absolute left-0 top-0 w-full h-full rounded-lg bg-black group-hover:translate-x-4"
+            >
+            </div>
+        </div>
+    </div>
+</div>
