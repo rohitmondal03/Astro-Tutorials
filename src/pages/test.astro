@@ -1,0 +1,38 @@
+---
+// For server-side JS
+const name = "Rohit";
+console.log(name);
+
+const NAMES= [
+  {
+    name: "Rohit",
+    age: 25
+  },
+  {
+    name: "Rohit",
+    age: 25
+  },
+  {
+    name: "Rohit",
+    age: 25
+  }
+];
+---
+
+<div class="text-2xl font-semibold">
+  <h1>Test page</h1>
+  <div>
+    {NAMES.map(d => (
+      <div>
+        <h2>{d.name}</h2>
+        <h2>{d.age}</h2>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+<!-- For client side JS -->
+<script>
+  console.log("Hello from script tag");
+</script>
